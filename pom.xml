@@ -14,7 +14,7 @@
 
     <groupId>com.stas</groupId>
     <artifactId>my-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>my-pet-clinic</name>
     <description>My Pet Clinic</description>
 

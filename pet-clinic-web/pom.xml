@@ -14,7 +14,7 @@
 
     <groupId>com.stas.mypetclinic</groupId>
     <artifactId>pet-clinic-web</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
 
