@@ -4,7 +4,7 @@
 
     <groupId>com.stas.mypetclinic</groupId>
     <artifactId>my-pet-clinic</artifactId>
-    <version>v1</version>
+    <version>v1-SNAPHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
