@@ -3,7 +3,7 @@
     <parent>
         <artifactId>my-pet-clinic</artifactId>
         <groupId>com.stas.mypetclinic</groupId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -95,4 +95,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+  <scm>
+    <tag>my-pet-clinic-0.0.5</tag>
+  </scm>
 </project>
