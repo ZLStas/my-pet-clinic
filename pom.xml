@@ -4,7 +4,7 @@
 
     <groupId>com.stas.mypetclinic</groupId>
     <artifactId>my-pet-clinic</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>v1</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -98,7 +98,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/ZLStas/my-pet-clinic.git</developerConnection>
-        <tag>pet-clinic-0.0.5</tag>
+        <tag>v1</tag>
     </scm>
 
 </project>
