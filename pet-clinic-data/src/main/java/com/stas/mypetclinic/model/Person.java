@@ -1,6 +1,6 @@
 package com.stas.mypetclinic.model;
 
-public class Person {
+public class Person  extends BaseEntity {
 
     private String firstName;
 
