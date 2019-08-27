@@ -97,7 +97,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/ZLStas/my-pet-clinic.git</developerConnection>
-        <tag>pet-clinic-0.0.5</tag>
+        <tag>clinic-0.0.5</tag>
     </scm>
 
 </project>
