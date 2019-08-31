@@ -1,35 +1,51 @@
 package com.stas.mypetclinic.services.map;
 
-import com.stas.mypetclinic.services.CrudService;
+import com.stas.mypetclinic.model.BaseEntity;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-public abstract class AbstractMapService<T, ID> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
-    protected Map<ID, T> map = new HashMap<>();
+    protected Map<Long, T> map = new HashMap<>();
 
     Set<T> findAll() {
         return new HashSet<>(map.values());
     }
 
-    T findById(ID id ){
+    T findById(ID id) {
         return map.get(id);
     }
 
-    T save(ID id , T object){
-        map.put(id,object);
-        return object;
+    T save(T object) {
+        if (object != null) {
+            if (object.getId() == null || alreadyPrecent(object.getId())) {
+                object.setId(nextId());
+            }
+            map.put(object.getId(), object);
+            return object;
+        } else {
+            throw new RuntimeException();
+        }
     }
 
-    void deleteById(ID id){
+    void deleteById(ID id) {
         map.remove(id);
     }
 
-    void delete(T object){
-        map.entrySet().removeIf((entry)-> entry.getValue().equals(object));
+    void delete(T object) {
+        map.entrySet().removeIf((entry) -> entry.getValue().equals(object));
+    }
+
+    private Long nextId() {
+        if (map.keySet().isEmpty()) {
+            return 1L;
+        } else {
+            return Collections.max(map.keySet()) + 1L;
+        }
+    }
+
+    private boolean alreadyPrecent(Long id) {
+        return map.keySet().contains(id);
     }
 
 }
