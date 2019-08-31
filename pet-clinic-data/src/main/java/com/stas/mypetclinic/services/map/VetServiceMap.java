@@ -1,11 +1,12 @@
 package com.stas.mypetclinic.services.map;
 
 import com.stas.mypetclinic.model.Vet;
-import com.stas.mypetclinic.services.CrudService;
+import com.stas.mypetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
