@@ -1,1 +1,5 @@
+com/stas/mypetclinic/controllers/VetController.class
 com/stas/mypetclinic/MyPetClinicApplication.class
+com/stas/mypetclinic/controllers/OwnerController.class
+com/stas/mypetclinic/bootstrap/DataLoader.class
+com/stas/mypetclinic/controllers/IndexController.class

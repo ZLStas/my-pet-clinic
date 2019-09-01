@@ -1,5 +1,14 @@
 /home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/Pet.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/CrudService.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/map/AbstractMapService.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/VetService.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/map/PetServiceMap.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/map/VetServiceMap.java
 /home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/PetType.java
 /home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/Vet.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/map/OwnerServiceMap.java
 /home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/Person.java
 /home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/Owner.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/PetService.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/model/BaseEntity.java
+/home/stas/Development/my-pet-clinic/pet-clinic-data/src/main/java/com/stas/mypetclinic/services/OwnerService.java
