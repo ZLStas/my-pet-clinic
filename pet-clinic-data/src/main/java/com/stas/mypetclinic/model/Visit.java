@@ -21,7 +21,7 @@ public class Visit extends BaseEntity {
         return data;
     }
 
-    public void setData(LocalDate data) {
+    public void setDate(LocalDate data) {
         this.data = data;
     }
 
