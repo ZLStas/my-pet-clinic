@@ -1,22 +1,27 @@
 package com.stas.mypetclinic.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Data
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "specialities")
 public class Speciality extends BaseEntity {
 
-    @Column(name = "description")
-    private String description;
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
+    public Speciality(Long id, String description) {
+        super(id);
         this.description = description;
     }
+
+    @Column(name = "description")
+    private String description;
 
 }
