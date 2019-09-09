@@ -1,14 +1,14 @@
 package com.stas.mypetclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Setter
+@Getter
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "vets")

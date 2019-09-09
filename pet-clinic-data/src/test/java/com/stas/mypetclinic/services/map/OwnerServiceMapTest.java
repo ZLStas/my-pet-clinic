@@ -14,7 +14,7 @@ class OwnerServiceMapTest {
     @BeforeEach
     void setUp() {
         ownerService = new OwnerServiceMap(new PetServiceMap(), new PetTypeMapService());
-        ownerService.save(Owner.builder.id(1L))
+       // ownerService.save(Owner.builder.id(1L))
     }
 
     @Test

@@ -1,13 +1,17 @@
 package com.stas.mypetclinic.model;
 
 
-import lombok.Builder;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity {
