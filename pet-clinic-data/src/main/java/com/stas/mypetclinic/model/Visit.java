@@ -16,13 +16,13 @@ public class Visit extends BaseEntity {
     @Builder
     public Visit(Long id, LocalDate data, String description, Pet pet) {
         super(id);
-        this.data = data;
+        this.date = data;
         this.description = description;
         this.pet = pet;
     }
 
     @Column(name = "data")
-    private LocalDate data;
+    private LocalDate date;
 
     @Column(name = "description")
     private String description;
@@ -31,27 +31,4 @@ public class Visit extends BaseEntity {
     @JoinColumn(name="pet_id")
     private Pet pet;
 
-    public LocalDate getData() {
-        return data;
-    }
-
-    public void setDate(LocalDate data) {
-        this.data = data;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Pet getPet() {
-        return pet;
-    }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-    }
 }
